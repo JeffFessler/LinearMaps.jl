@@ -378,25 +378,6 @@ for Atype in (AbstractVector, AbstractMatrix)
 end
 
 ############
-# show methods
-############
-
-# block2string(b, s) = string(join(map(string, b), '×'), "-blocked ", Base.dims2string(s))
-# Base.summary(a::BlockMap) = string(block2string(nblocks(a), size(a)), " ", typeof(a))
-# # _show_typeof(io, a) = show(io, typeof(a))
-# function Base.summary(io::IO, a::AbstractBlockMap)
-#     print(io, block2string(nblocks(a), size(a)))
-#     print(io, ' ')
-#     _show_typeof(io, a)
-# end
-# function _show_typeof(io::IO, a::AbstractBlockMap{T}) where {T}
-#     Base.show_type_name(io, typeof(a).name)
-#     print(io, '{')
-#     show(io, T)
-#     print(io, '}')
-# end
-
-############
 # BlockDiagonalMap
 ############
 
